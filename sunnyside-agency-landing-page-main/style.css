@@ -1,0 +1,471 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-front {
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 10px 20px;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Hind Guntur', sans-serif;
+    letter-spacing: 0px;
+    margin-left: 30px;
+
+    /* font-stretch: narrower; */
+}
+
+.menu-icon {
+    display: none;
+    line-height: 2.5rems;
+}
+
+
+.navbar-collapse {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-item {
+    width: 120px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    line-height: 3rem;
+}
+
+.navbar-item:hover {
+    color: #000;
+}
+
+.btn {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    font-weight: bold;
+    /* font-size: 1.2rem; */
+    font-family: 'Hind Guntur', sans-serif;
+    width: 150px;
+    line-height: 3.5rem;
+    margin-right: 30px;
+
+}
+
+.btn:hover {
+    background-color: rgb(255, 255, 255, .3);
+    color: #fff;
+}
+
+.page-front h1 {
+    font-size: 3.5rem;
+    letter-spacing: .6rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Inknut Antiqua', serif;
+}
+
+
+
+/* ______ image flex panel section*/
+
+.image-flexboard {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+   
+}
+
+.flex-item {
+    display: inline-flex;
+    width: 50%;
+    height: 600px;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 5% 10%;
+
+}
+
+.flex-item h1 {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.flex-item p {
+    color: #565656;
+    font-family: 'Hind Guntur', sans-serif;
+    line-height: 1.5rem;
+}
+
+.flex-item a {
+    font-family: 'Inknut Antiqua', serif;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    width: max-content;
+
+}
+
+.yellow-underline::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1.4rem;
+    width: 100%;
+    height: 10px;
+    background-color: hsla(60, 91%, 50%, 0.353);
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.yellow-underline:hover::after {
+    background-color: hsla(60, 92%, 51%, 0.788);
+}
+
+.pink-underline::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1.4rem;
+    width: 100%;
+    height: 10px;
+    background-color: pink;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.pink-underline:hover::after {
+    background-color: rgb(253, 141, 160);
+}
+
+.services-text {
+    justify-content: flex-end;
+    align-items: center ;
+    text-align: center;
+}
+
+.opacity-70 {
+    opacity: 70%;
+}
+
+.egg-img {
+    background-image: url(images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.glass-img {
+    background-image: url(images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.cherry-img {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.orange-img {
+    background-image: url(images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonials {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: 10%;
+    /* display: flex; */
+}
+
+.testimonials-heading {
+    margin: 0 auto;
+    width: 100%;
+    line-height: 3rem;
+    font-family: 'Inknut Antiqua', serif;
+    color: silver;
+}
+
+.testimonial-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimonial-card-item {
+    width: 33.3%;
+    padding: 20px;
+}
+
+.testimonial-cards img {
+    border-radius: 50%;
+    width: 80px;
+    max-width: 100%;
+    margin: 60px auto;
+}
+
+.testimonial-card-item p,
+.testimonial-text {
+    color: #565656; 
+}
+
+.testimonial-name {
+    font-family: 'Inknut Antiqua', serif;
+    margin: 60px auto 0;
+}
+
+.testimonial-designation {
+    margin: 0px auto;
+}
+
+
+#photo-collage {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.collage-item {
+    width: 25%;
+    height: 500px;
+}
+
+.photo-bottle {
+    background-image: url("images/desktop/image-gallery-milkbottles.jpg");
+}
+
+.photo-orange {
+    background-image: url("images/desktop/image-gallery-orange.jpg");
+}
+
+.photo-cone {
+    background-image: url("images/desktop/image-gallery-cone.jpg");
+}
+
+.photo-pink {
+    background-image: url("images/desktop/image-gallery-sugarcubes.jpg");
+}
+
+.photo-bottle,
+.photo-cone,
+.photo-orange,
+.photo-pink {
+    background-size: cover;
+    background-position: center;
+}
+
+#footer {
+    background-color: #78decd;
+    width: 100%;
+    height: 350px;
+    color: #458c7e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+    padding: 30px;
+    /* margin: 30px; */
+}
+
+.social-media .fa-brands {
+    padding: 30px 15px;
+    margin: 40px auto;
+    cursor: pointer;
+    color: #458c7e
+}
+
+.footer-links a:hover,
+.social-media .fa-brands:hover {
+    color: #fff;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    background-color: #78decd;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 1100px) {
+    .collage-item {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .logo {
+        font-size: 2.5rem;
+    }
+    .collage-item {
+        height: 300px;
+    }
+    
+    .navbar-item {
+        width: 80px;
+        line-height: 3.2rem;
+    }
+
+    .navbar .btn {
+        width: 120px;
+    }
+
+    .page-front h1 {
+        line-height: 4.5rem;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .logo {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .menu-icon {
+        display: initial;
+    }
+
+    .menu-icon:hover {
+        background-color: rgb(255, 255, 255. 60%);
+        cursor: pointer;
+        color: #565656;
+    }
+    
+
+    .navbar-collapse {
+        flex-direction: column;
+
+        position: absolute;
+        
+        top: -300px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        /* transform: scale(0); */
+
+
+        width: 85%;
+        height: 300px;
+
+        margin: 0 auto;
+        background-color: #fff;
+        color: #565656;
+
+        transition: transform .4s;
+
+    }
+
+
+    .navbar-collapse::before{
+        content: "";
+        
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: -29px;
+
+        border-bottom: 30px solid #fff;
+        border-left: 30px solid transparent;
+    }
+
+    .menu-icon:hover ~ .navbar-collapse {
+       transform: translate(-50%, 400px);
+       /* transform: scale(1); */
+    }
+
+    .navbar-collapse .btn {
+        margin-right: 0;
+        background-color: hsl(51, 100%, 49%);
+        color: #565656;
+    }
+
+    .navbar-collapse .btn:hover {
+        background-color: rgb(250, 212, 0, .4);
+        color: #000;
+    }
+
+    .page-front h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+        width: 80%;
+    }
+
+    .flex-item {
+        width: 100%;
+        max-height: fit-content;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonial-card-item {
+        width: 100%;
+    }
+
+    .testimonial-cards img {
+        margin: 30px auto;
+    }
+
+    .testimonial-name {
+        margin: 20px auto 0;
+    }
+
+    .collage-item {
+        width: 50%;
+    }
+    
+}
+
+
+

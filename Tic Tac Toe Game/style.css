@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #031625;
+    font-family: 'Silkscreen', cursive;
+}
+
+/* #031625 */
+
+/* Start Game Section */
+.choose-sign-box {
+    background-color: #082943;
+    color: #fff;
+    width: 100%;
+    height: 30%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.sign-option-box {
+    background-color: #031625;
+    margin: auto;
+    width: 80%;
+    aspect-ratio: 1 / .18;
+    border-radius: 10px;
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.sign-option {
+    width: 47%;
+    margin-left: 2%;
+    height: 70%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    box-sizing: border-box;
+}
+
+.sign-option:hover {
+    cursor: pointer;
+    border: 1px solid #b6b6b6  ;
+    
+}
+
+.choose-sign-box p {
+    margin: 5% auto;
+}
+
+.start-game-btn {
+    /* color: #fff; */
+    width: 100%;
+    aspect-ratio: 1 / .12;
+    margin-top: 5%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.start-game-btn#start-computer-game {
+    box-shadow: 0 6px #c06a02;
+}
+
+.start-game-btn#start-2player-game {
+    box-shadow: 0 6px #0f4a47;
+}
+
+
+
+/* _____________________ GamePlay Window _____________________  */
+
+.game-box {
+    width: 32%;
+    height: fit-content;
+    background-color: #031625;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.title-bar {
+    width: 28%;
+    aspect-ratio : 1 / .3;
+    
+    margin: 2% 1.5%;
+    border-radius: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* reducing circle image size to match ratio with x sign */
+.circle-icon {
+    width: 28px;
+}
+
+.turn-display {
+    box-sizing: border-box;
+    background-color: #082943;
+    color: #fff;
+    font-size: .7rem;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 6px #010b13;
+    /* padding: 4px 0; */
+
+}
+
+
+/* refresh icon at heading bar */
+.refresh-icon-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.refresh-icon-bg {
+    background-color: #989898;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px #747373;
+}
+
+.refresh-icon-bg:hover {
+    background-color: #b5b5b5;
+
+}
+
+.refresh-icon {
+    /* background-color: #989898; */
+    color: #082943;
+    margin: 0 auto;
+    
+}
+
+
+/* __________________ Gameplay boxes __________________ */
+.tick-box {
+    width: 28%;
+    aspect-ratio : 1 / 1;
+    background-color: #082943;  
+    margin: 2% 1.5%;
+    border-radius: 10px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px #010b13;
+}
+
+.tick-box:hover {
+    background-color: #0f4268; 
+    /* cursor: pointer; */
+}
+
+
+
+/* Cross and O sign image sizes */
+.cross-sign {
+    max-width: 100%;
+    height: auto;
+}
+
+.o-sign {
+    max-width: 100%;
+    height: 65%;
+}
+
+/* __________________ Win Display __________________ */
+
+.win-display {
+    box-sizing: border-box;
+    width: 28%;
+    aspect-ratio : 1 / .5;
+    background-color: #082943; 
+    margin: 2% 1.5%;
+    border-radius: 10px;
+
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+/* Wins Display Text */
+.win-heading {
+    margin: 10% auto 0;
+}
+
+.win-count {
+    margin: 1% auto;
+}
+
+
+/* __________________________ win pop up panel __________________________ */
+
+.win-popup {
+    width: 100%;
+    background-color: #0b385a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #52afaa;
+    padding: 10px 0 ;
+    z-index: 2;
+}
+
+.winning-sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.win-popup p {
+    color: #fff;
+    display: inline-block;
+    
+}
+
+
+.win-panel-btn {
+
+    width: 150px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+
+.reset-btn {
+    box-shadow: 0 6px #747373;
+    width: 100px;
+}
+
+
+.next-round-btn {
+    box-shadow: 0 6px #c06a02;
+    cursor: pointer;
+}
+
+
+
+
+.bg-blur {
+    position: relative;
+    background-color: hsla(207, 90%, 4%, 0.427);
+    width: 100%;
+    height: 100vh;
+    /* z-index: 1; */
+}
+
+.orange-bg {
+    background-color: darkorange ;
+}
+
+.orange-bg-hoverstate:hover {
+    background-color: #faa741;
+    cursor: pointer;
+}
+
+.grey-bg {
+    background-color: #989898;
+}
+
+.grey-bg-hoverstate:hover {
+    background-color: #b5b5b5;
+    cursor: pointer;
+}
+
+.c-green-bg {
+    background-color: #248984;
+}
+
+.c-green-bg-hoverstate:hover {
+    background-color: #52afaa;
+    cursor: pointer;
+}
+
+
+.light-grey-bg {
+    background-color: #b6b6b6;
+}
+
+.font {
+    font-size: 1rem;
+    font-size-adjust: .5rem;
+}
+
+
+.invisible {
+    display: none;
+}

@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', serif;
+}
+
+.gradient-block {
+    background: url(images/bg-main-desktop.png);
+    width: 30%;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+}
+
+.main {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-data-form {
+    width: 25%;
+    height: fit-content;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Date Entry Form */
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5rem;
+    border: 1.5px solid #cfcece;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: .5rem;
+    padding-left: .8rem;
+}
+
+.expiry-date input{
+    width: 20%;
+    display: inline-block;
+}
+
+.cvc input {
+    width: 40%;
+}
+
+input::placeholder {
+    color: #cfcece;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #501e78;
+}
+
+.blank-warning {
+    font-size: 0.7rem;
+    color: red;
+    margin-top: 3%;
+}
+
+.invisible {
+    display: none;
+    margin: 1% 0 0;
+}
+
+
+/* this style applies if the input filed is left blank after focus */
+.warning, .warning:focus {
+    outline: none !important;
+    border-color: red;
+}
+
+/* removing text spinner/changer from chrome */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+.btn {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: .5rem;
+    background-color: #331849;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #22152c;
+    cursor: pointer;
+
+}
+
+label {
+    font-size: .9rem;
+    /* margin: 20px 0; */
+}
+
+.text-field {
+    padding: 0.5rem 0;
+}
+
+.fa-solid {
+    background: -webkit-linear-gradient(#1f1ca6, #561689);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.completed-state {
+    text-align: center;
+    color: grey;
+}
+
+h1 {
+    color: #331849;
+    font-size: 2rem;
+    margin: 10% auto 2%;
+}
+
+.completion-message {
+    margin-bottom: 10%;
+}
+
+/* ********************* card mockup design ******************** */
+
+.live-card-front {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 3.5in;
+    height: 2in;
+    border-radius: 8px;
+    background: url("images/bg-card-front.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Slabo 13px', serif;
+    box-sizing: border-box;
+    padding: 30px;
+    z-index: 1;
+}
+
+.card-logo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.card-logo-outline {
+    position: absolute;
+    top: 21%;
+    left: 25%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.card-number {
+    margin-top: .6in;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.card-name {
+    display: inline-block;
+    margin-top: 18px;
+    font-family: 'Roboto', serif;
+}
+
+.card-expiry-date {
+    position: absolute;
+    right: 30px;
+    display: inline-block;
+    justify-content: flex-end;
+    margin: 18px 0;
+    font-family: 'Roboto', serif;
+}
+
+
+
+/* credit card back side block size */
+.live-card-back {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    width: 21rem;
+    height: 12rem;   
+    border-radius: 8px;
+    background: linear-gradient(140deg, #ffffff, #cac9c9);
+    text-align: center;
+    font-family: 'Roboto', serif;
+    
+}
+
+/* credit card back side black stripe */
+.black-stripe {
+    position: absolute;
+    top: 1.5rem;
+    width: 100%;
+    height: 2.8rem;
+    background-color: black;
+}
+
+
+/* credit card back cvc code stripe*/
+.cvc-stripe {
+    position: absolute;
+    top: 5.5rem;
+    left: 10%;
+    width: 80%;
+    box-sizing: border-box;
+    height: 2rem;
+    background-color: #b8b7b7;
+    color: #fff;
+    text-align: right;
+    padding: 0 20px;
+    border-radius: 3px;
+    line-height: 2rem;
+}
+
+
+
+/* credit card back side text lines */
+
+.text-lines-design {
+    position: absolute;
+    top: 8.3rem;
+    left: 25%;
+    width: 50%;
+    height: 2rem;
+    /* background-color: aquamarine; */
+    font-size: 0;
+}
+
+.first-line, .second-line, .third-line {
+    margin: 7px 0;  
+}
+
+
+.big-line {
+    display: inline-block;
+    width: 47%;
+    border: 0 solid #a5a5a5;
+    border-width: 3px 0 0 0;
+    border-radius: 2px;
+    margin-right: 3%;
+}
+
+.md-line {
+    display: inline-block;
+    width: 27%;
+    border: 0 solid #a5a5a5;
+    border-width: 3px 0 0 0;
+    margin-right: 3%;
+}
+
+.sm-line {
+    display: inline-block;
+    width: 17%;
+    border: 0 solid #a5a5a5;
+    border-width: 3px 0 0 0;
+    margin-right: 3%;
+}
+
+.xsm-line {
+    display: inline-block;
+    width: 7%;
+    border: 0 solid #a5a5a5;
+    border-width: 3px 0 0 0;
+    margin-right: 3%;
+}
+
+.space {
+    margin-left: 5%;
+}
+
+
+/* Laptop screen */
+
+@media (max-width: 992px) {
+    
+    .card-data-form {
+        width: 30%;
+        left: 70%;
+    }
+
+
+    /* .live-card-front {
+
+    } */
+}
+
+
+/* Tablet Screen */
+
+@media (max-width: 992px) {
+    
+
+    .main {
+        width: 100%;
+        display: block;
+    }
+    
+    .gradient-block {
+        background: url(images/bg-main-mobile.png);
+        width: 100%;
+        height: 20%;
+        display: block;
+    }
+
+    .card-data-form {
+        position: static;
+        display: block;
+        width: 100%;
+    }
+}

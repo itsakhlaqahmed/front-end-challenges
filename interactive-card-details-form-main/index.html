@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+
+  <link rel="stylesheet" href="style.css">
+
+
+<!-- font awesome icons -->
+  <script src="https://kit.fontawesome.com/e5eff8ff26.js" crossorigin="anonymous"></script>
+
+
+  <!-- Google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Slabo+13px&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="gradient-block">
+      <div class="gradient-block-blur"></div>
+    </div>
+
+    <!-- <div class="live-card"> -->
+      <div class="live-card-front">
+        <div class="card-logo"></div>
+        <div class="card-logo-outline"></div>
+        <div class="card-number" id="card-display-number">0000 0000 0000 0000</div>
+        <div class="card-name" id="card-display-name">Jane Appleseed</div>
+        <div class="card-expiry-date" id="card-display-expiry-date">00/00</div>
+      </div>
+
+      <div class="live-card-back">
+
+        <div class="black-stripe"></div>
+        
+        <div class="cvc-stripe" id="card-display-cvc">
+          000
+        </div>
+
+        <div class="text-lines-design">
+          <div class="first-line">
+            <div class="big-line"></div>
+            <div class="sm-line"></div>
+            <div class="sm-line"></div>
+            <div class="xsm-line"></div>
+          </div>
+
+          <div class="second-line">
+            <div class="sm-line space"></div>
+            <div class="md-line"></div>
+            <div class="md-line"></div>
+            <div class="xsm-line"></div>
+          </div>
+
+          <div class="third-line">
+            <div class="xsm-line"></div>
+            <div class="sm-line"></div>
+            <div class="sm-line"></div>
+            <div class="big-line"></div>
+          </div>
+        </div>
+      
+      </div>
+    <!-- </div> -->
+  
+    <div class="card-data-form">
+
+      <div class="form ">
+          <form action="#" method="post">
+          <div class="text-field">
+            <label for="name">Cardholder Name</label>
+            <br>
+            <input class="lg" type="text" name="name"  id="card-name" placeholder="e.g. Jane Appleseed" required>
+            <div class="blank-warning invisible">Can't be blank</div>
+          </div>
+
+          <div class="text-field">
+            <label for="card-number">Card Number</label>
+            <br>
+            <input class="lg" type="text" name="card-number"  id="card-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19" required>
+            <div class="blank-warning invisible">Can't be blank</div>
+            </div>
+
+          <div class="text-field expiry-date">
+            <label for="exp-month">Exp. Date (MM/YY)</label>
+            <br>
+            <input class="sm" type="number" name="exp-month"  id="card-expiry-month" placeholder="MM" min="1" max="12" required>
+            <input class="sm" type="number" name="exp-year"  id="card-expiry-year" placeholder="YY" min="2022"  required>
+            <div class="blank-warning invisible">Can't be blank</div>
+          </div>
+          
+
+          <div class="text-field cvc">
+            <label for="cvc">CVC</label>
+            <br>
+            <input type="number" name="cvc"  id="cvc" placeholder="e.g. 123" max="999" required>
+            <div class="blank-warning invisible">Can't be blank</div>
+            <br>
+            
+          </div>
+
+          <button class="btn" type="submit">Confirm</button>
+          </form>
+          
+      </div>
+
+      
+      <!----------- Completed state start ---------->
+
+      <div class="completed-state invisible">
+        <i class="fa-solid fa-circle-check fa-5x"></i>
+        <h1 class="greeting">THANK YOU!</h1>
+         <div class="completion-message">We've added your card details</div> 
+        <button class="btn" type="submit">Continue</button>
+    </div>
+    </div>
+</div>
+    
+    
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <script src="index.js "></script>
+  </body>
+</html>

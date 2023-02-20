@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+   
+}
+
+.front-main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 65vh;
+    background-color: grey;
+   
+}
+
+/* image slider */
+
+.image-slider {
+
+    width: 60%;
+    height: inherit;
+    background-image: url("images/desktop-image-hero-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    
+}
+
+.slider-btns {
+    position: absolute;
+    display: flex;
+    right:  -160px;
+    bottom: 0;
+    z-index: 1;
+    
+}
+
+.slider-btn-item  {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    /* border: 1px solid red; */
+}
+
+.slider-btn-item:hover {
+    background-color: #000000b1;
+}
+
+
+/* ______________________ Navbar ______________________ */
+
+.navbar-logo {
+    font-size: 2rem;
+    padding: 0 20px;
+    line-height: 2rem;
+}
+
+.navbar {
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.navbar-link {
+
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.navbar-link a {
+   text-decoration: none;
+   color: inherit;
+   position: relative;
+}
+
+
+
+
+.navbar-link a::after {
+    content: '';
+    display: none;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    z-index: 1;
+    margin: 0 auto  ;
+}
+
+.navbar-link:hover a::after {
+    display: block;
+    
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+
+}
+
+
+/* __________ main image supporting text_______ */
+
+.main-text {
+    position: relative;
+    width: 40%;
+    height: inherit;
+    padding: 50px 100px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.main-text h1 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    margin-bottom: 0;
+    transition: all 1s linear;
+}
+
+.main-text p {
+    font-size: .9rem;
+    color: grey;
+    line-height: 1.5;
+}
+
+.main-text a {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-text a i {
+    opacity: .3;
+}
+
+.main-text a:hover {
+    color: grey;
+}
+
+
+
+
+
+/* ____________ photo collage sec _____________ */
+
+.photo-collage {
+    display: flex;
+    flex-wrap: wrap;
+    height: 35vh;
+}
+
+.collage-item-sm {
+    width: 30%;
+    height: initial;
+}
+
+.collage-item-lg {
+    width: 40%;
+    height: inherit;
+}
+
+.collage-image-1 {
+    background-image: url("images/image-about-dark.jpg");
+}
+
+.collage-image-2 {
+    background-image: url("images/image-about-light.jpg");
+}
+
+.collage-image-1, 
+.collage-image-2 {
+    background-size: cover;
+    background-position: center;
+}
+
+.about-furniture {
+    padding: 50px;
+    font-size: .9rem;
+    
+}
+
+.about-furniture h2 {
+    /* margin: 0; */
+    letter-spacing: .4rem;
+}
+
+.about-furniture p {
+    margin-top: 0;
+    font-size: .9rem;
+    color: grey;
+    line-height: 1.5;
+
+}
+
+
+
+/* bg image fade animation */
+.bg-img-fade {
+    animation: backgroundImgFade 600ms;
+    
+}
+
+@keyframes backgroundImgFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+/* fade in animation */
+
+.fade {
+    animation: fadeAnimation 600ms;
+}
+
+@keyframes fadeAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+}
+
+
+@media screen and (max-width: 1250px) {
+
+    .front-main {
+        display: flex;
+        height: fit-content;
+        background-color: grey;
+       
+    }
+    
+    .main-text {
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+}
+
+
+
+@media screen and (max-width: 960px) {
+
+    .image-slider {
+        width: 100%;
+        height: 60vh;
+        
+    }
+
+    .main-text {
+        width: 100%;
+        padding: 50px 100px;
+    }
+}
